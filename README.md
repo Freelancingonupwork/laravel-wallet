@@ -56,7 +56,7 @@ php artisan migrate:refresh --seed
 Then start your server:
 
 ```
-php artisan migrate:refresh --seed
+php artisan serve
 ```
 
 
