@@ -31,7 +31,7 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 #### Example:
 
-Clone down this repository. You will need composer installed globally on your machine.
+Clone down this repository. You will need `composer` installed globally on your machine.
 
 Installation:
 
