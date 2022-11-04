@@ -31,9 +31,20 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 #### Example:
 
-Clone down this repository. You will need `composer` installed globally on your machine.
+#### Step 1: Clone repository
 
-Installation:
+Clone down this repository. 
+
+#### Step 2: Install composer
+
+You will need `composer` installed globally on your machine. if not installed then download from below url.
+
+Reference:
+```
+https://getcomposer.org/download
+```
+
+Open Terminal on root directory and use following commands
 
 ```bash
 composer install
