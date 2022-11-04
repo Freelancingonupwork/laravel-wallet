@@ -49,7 +49,7 @@ class WalletController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Payment succesfully completed',
-                'data' => ['balance' => number_format($user->wallet,4) ]
+                'data' => ['balance' => floatval(number_format($user->wallet,4)) ]
             ]);
         } catch (\Throwable $th) {
             return response()->json([
@@ -91,7 +91,7 @@ class WalletController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Amount is successfully Added to Wallet',
-                'data' => ['balance' => number_format($user->wallet,4) ]
+                'data' => ['balance' => floatval(number_format($user->wallet,4)) ]
             ]);
             
         } catch (\Throwable $th) {
