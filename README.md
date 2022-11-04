@@ -43,6 +43,7 @@ Reference:
 ```
 https://getcomposer.org/download
 ```
+#### Step 3: Installation:
 
 Open Terminal on root directory and use following commands
 
