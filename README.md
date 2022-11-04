@@ -65,6 +65,8 @@ APP_URL=http://your-app.com
 
 ### Step 5: Application Key
 
+Open Terminal on your project root directory and use following command
+
 Run the following command to generate your app key:
 
 ```
@@ -87,6 +89,19 @@ Then start your server:
 php artisan serve
 ```
 
+### Step 8: To run APIs on postman
+
+For Detail Documentation of APIs use Following reference link:
+
+```
+https://documenter.getpostman.com/view/18373499/2s8YYCtRCE
+```
+
+To import postman collection use following link:
+
+```
+https://www.getpostman.com/collections/50fb35ccbdbd7727bac4
+```
 
 ## Laravel Sponsors
 
