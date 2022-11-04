@@ -43,12 +43,12 @@ Next you need to make a copy of the `.env.example` file and rename it to `.env` 
 Now open the .env file and update the necessary configuration changes such as application name and database information.
 
 ```dosini
-DB_CONNECTION=<mysql>
-DB_HOST=<127.0.0.1>
-DB_PORT=<3306>
-DB_DATABASE=<laravel>
-DB_USERNAME=<root>
-DB_PASSWORD=<root>
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=<DATABASE_NAME>
+DB_USERNAME=<DATABASE_USERNAME>
+DB_PASSWORD=<DATABASE_PASSWORD>
 ```
 
 #### IMPORTANT!
