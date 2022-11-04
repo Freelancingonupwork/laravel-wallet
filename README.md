@@ -27,6 +27,39 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installation and Setup Instructions
+
+#### Example:
+
+Clone down this repository. You will need composer installed globally on your machine.
+
+Installation:
+
+```bash
+composer install
+```
+
+Next you need to make a copy of the `.env.example` file and rename it to `.env` inside your project root.
+
+Run the following command to generate your app key:
+
+```
+php artisan key:generate
+```
+
+Running Migrations and Seeds:
+
+```
+php artisan migrate:refresh --seed
+```
+
+Then start your server:
+
+```
+php artisan migrate:refresh --seed
+```
+
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
