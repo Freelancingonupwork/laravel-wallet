@@ -21,7 +21,7 @@ class WalletController extends Controller
             [
                 'user_id' => 'required',
                 'product' => 'required',
-                'amount' =>  'required'
+                'quantity' => 'required|numeric|min:1',
             ]);
 
 
@@ -34,8 +34,9 @@ class WalletController extends Controller
             }
 
             $user = $request->user();
+            $amount = floatval($request->quantity * 1);
 
-            if (floatval($request->amount) > $user->wallet) {
+            if ($amount > $user->wallet) {
                 return response()->json([
                     'status' => false,
                     'message' => 'Insufficient Balance in Wallet',
@@ -43,7 +44,7 @@ class WalletController extends Controller
                 ], 401);
             }
 
-            $user->wallet = $user->wallet - floatval($request->amount);
+            $user->wallet = $user->wallet - floatval($amount);
             $user->save();
 
             return response()->json([
