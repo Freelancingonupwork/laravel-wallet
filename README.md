@@ -91,7 +91,7 @@ php artisan serve
 
 ### Step 8: To run APIs on postman
 
-For Detail Documentation of APIs use Following reference link:
+For Detailed Documentation of APIs use Following reference link:
 
 ```
 https://documenter.getpostman.com/view/18373499/2s8YYCtRCE
