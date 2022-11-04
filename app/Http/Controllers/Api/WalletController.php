@@ -21,7 +21,7 @@ class WalletController extends Controller
             [
                 'user_id' => 'required',
                 'product' => 'required',
-                'quantity' => 'required|numeric|min:1',
+                'quantity' => 'required|numeric|gt:0',
             ]);
 
 
@@ -34,7 +34,7 @@ class WalletController extends Controller
             }
 
             $user = $request->user();
-            $amount = floatval($request->quantity * 1);
+            $amount = floatval(round($request->quantity) * 1);
 
             if ($amount > $user->wallet) {
                 return response()->json([
