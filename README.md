@@ -46,7 +46,7 @@ https://getcomposer.org/download
 
 ### Step 3: Run composer install
 
-Open Terminal on root directory and use following commands
+Open Terminal on root directory and use following command
 
 ```bash
 composer install
