@@ -31,11 +31,11 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 #### Example:
 
-#### Step 1: Clone repository
+### Step 1: Clone repository
 
 Clone down this repository. 
 
-#### Step 2: Install composer
+### Step 2: Install composer
 
 You will need `composer` installed globally on your machine. if not installed then download from below url.
 
@@ -43,7 +43,8 @@ Reference:
 ```
 https://getcomposer.org/download
 ```
-#### Step 3: Installation:
+
+### Step 3: Run composer install
 
 Open Terminal on root directory and use following commands
 
@@ -51,7 +52,40 @@ Open Terminal on root directory and use following commands
 composer install
 ```
 
+Now laravel and its dependencies are installed via composer.
+
+### Step 3: Create MySQL database
+
+Create a database in MySQL. Keep noted database name, user and password.
+
+### Step 4: Update the Environment Configurations
+
 Next you need to make a copy of the `.env.example` file and rename it to `.env` inside your project root.
+
+Now open the .env file and update the necessary configuration changes such as application name and database information.
+
+```dosini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+#### IMPORTANT!
+
+Set `APP_DEBUG` to `false` and `APP_ENV` to `production`, and update the `APP_NAME` and `APP_URL` accordingly. If you leave `APP_DEBUG` as true, in the event of errors you’ll be displaying sensitive debug information to the world:
+
+```dosini
+APP_NAME="Project name"
+APP_ENV=production
+APP_KEY=
+APP_DEBUG=false
+APP_URL=http://your-app.com
+```
+
+### Step 5: Application Key
 
 Run the following command to generate your app key:
 
@@ -59,11 +93,15 @@ Run the following command to generate your app key:
 php artisan key:generate
 ```
 
+### Step 6: Execute Database Migration and Seeder
+
 Running Migrations and Seeds:
 
 ```
-php artisan migrate:refresh --seed
+php artisan migrate --seed
 ```
+
+### Step 7: Start Local Development Server
 
 Then start your server:
 
